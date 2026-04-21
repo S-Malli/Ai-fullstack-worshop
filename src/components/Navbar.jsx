@@ -17,9 +17,18 @@ export default function Navbar() {
           <span className="navbar-logo-icon">AI</span>
           AI Digital Gen
         </a>
-        <a href="#register" className="navbar-cta">
-          Book Now ₹{CONFIG.workshopPrice}
-        </a>
+        <div className="navbar-actions">
+          <a href={`mailto:${CONFIG.enquiryEmail}`} className="navbar-email" title="Click to email us">
+            <span className="navbar-email-icon">✉️</span>
+            <div className="navbar-email-text">
+              <span>Enquiry:</span>
+              <strong>{CONFIG.enquiryEmail}</strong>
+            </div>
+          </a>
+          <a href="#register" className="navbar-cta">
+            Book Now ₹{CONFIG.workshopPrice}
+          </a>
+        </div>
       </div>
     </nav>
   );

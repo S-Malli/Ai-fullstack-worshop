@@ -4,7 +4,18 @@
 .navbar .container { display: flex; align-items: center; justify-content: space-between; }
 .navbar-logo { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
 .navbar-logo-icon { width: 34px; height: 34px; border-radius: var(--radius-sm); background: var(--gradient-full); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; color: white; }
-.navbar-cta { background: var(--gradient-primary); color: white; padding: 9px 22px; border-radius: var(--radius-full); font-weight: 600; font-size: 0.85rem; transition: transform 0.3s, box-shadow 0.3s; box-shadow: var(--shadow-cta); }
+.navbar-actions { display: flex; align-items: center; gap: 24px; position: relative; z-index: 1001; }
+.navbar-email { font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; transition: all 0.3s ease; cursor: pointer; text-decoration: none; }
+.navbar-email-icon { font-size: 1.1rem; opacity: 0.9; transition: transform 0.3s; }
+.navbar-email-text { display: flex; flex-direction: column; line-height: 1.2; }
+.navbar-email span { font-size: 0.7rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+.navbar-email strong { color: var(--text-primary); font-weight: 700; font-size: 0.88rem; }
+.navbar-email.copied strong { color: #22c55e; }
+.navbar-email.copied .navbar-email-icon { transform: scale(1.2); }
+.navbar-email:hover { transform: translateY(-1px); }
+.navbar-email:hover .navbar-email-icon { transform: scale(1.1); }
+.navbar-email:hover strong { color: var(--purple); }
+.navbar-cta { background: var(--gradient-primary); color: white; padding: 9px 22px; border-radius: var(--radius-full); font-weight: 600; font-size: 0.85rem; transition: transform 0.3s, box-shadow 0.3s; box-shadow: var(--shadow-cta); white-space: nowrap; }
 .navbar-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(131, 56, 236, 0.4); }
 
 /* === Marquee === */
@@ -224,6 +235,10 @@
   .solution-code-block { font-size: 0.75rem; padding: 16px; }
   .navbar-logo { font-size: 1.05rem; }
   .navbar-logo-icon { width: 30px; height: 30px; font-size: 0.7rem; }
+  .navbar-actions { gap: 12px; }
+  .navbar-email span { display: none; }
+  .navbar-email { font-size: 0.75rem; }
+  .navbar-cta { padding: 7px 16px; font-size: 0.75rem; }
   .curriculum-card { padding: 20px 18px; }
   .curriculum-card-header { flex-direction: column; gap: 10px; }
   .curriculum-card-meta { flex-direction: row; align-items: center; }

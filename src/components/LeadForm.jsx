@@ -81,10 +81,6 @@ export default function LeadForm() {
                   <span>Our team will <strong>reach you within 30 minutes</strong></span>
                 </div>
                 <div className="form-success-badge">
-                  <span>📱</span>
-                  <span>Check your <strong>Email</strong> for details</span>
-                </div>
-                <div className="form-success-badge">
                   <span>📅</span>
                   <span>Live classes on <strong>Weekends</strong></span>
                 </div>

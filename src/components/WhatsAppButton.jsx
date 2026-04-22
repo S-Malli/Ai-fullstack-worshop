@@ -1,7 +1,13 @@
+import { CONFIG } from '../constants/config';
+
 export default function WhatsAppButton() {
-  const whatsappNumber = '91XXXXXXXXXX'; // Replace with actual number
+  const whatsappNumber = CONFIG.whatsappNumber;
   const message = encodeURIComponent(
-    'Hi! I want to join the AI Fullstack Workshop 🚀'
+    `Hi! I Interested to join the AI Fullstack Workshop
+      Name: 
+      Email: 
+      Phone: 
+      `
   );
   const url = `https://wa.me/${whatsappNumber}?text=${message}`;
 

@@ -224,7 +224,7 @@
 @media (max-width: 768px) {
   .problem-grid { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
   .testimonial-card { flex: 0 0 270px; padding: 22px 18px; }
-  .form-wrapper { padding: 28px 20px; margin: 0 8px; }
+  .form-wrapper { padding: 28px 20px; margin: 0 auto; }
   .countdown-value { font-size: 1.3rem; min-width: 48px; padding: 5px 10px; }
   .countdown-separator { font-size: 1.1rem; }
   .hero-stats { gap: 16px; }

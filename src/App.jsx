@@ -7,6 +7,7 @@ import SolutionSection from './components/SolutionSection';
 import LearningSection from './components/LearningSection';
 import Highlights from './components/Highlights';
 import WhoIsItFor from './components/WhoIsItFor';
+import Pricing from './components/Pricing';
 import LeadForm from './components/LeadForm';
 import Testimonials from './components/Testimonials';
 import FinalCTA from './components/FinalCTA';
@@ -26,6 +27,7 @@ function App() {
         <Hero />
         <Highlights />
         <WhoIsItFor />
+        <Pricing />
         <LearningSection />
         <SolutionSection />
         <ProblemSection />

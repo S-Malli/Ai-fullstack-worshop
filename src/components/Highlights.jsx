@@ -6,7 +6,7 @@ export default function Highlights() {
     { emoji: '💻', text: 'Live Demo Session', color: '#FF006E' },
     { emoji: '❓', text: 'Doubt Clearing', color: '#22c55e' },
     { emoji: '📅', text: 'Weekend Only', color: '#3A86FF' },
-    { emoji: '💰', text: `₹${CONFIG.workshopPrice} Refund Guarantee`, color: '#8338EC' },
+    { emoji: '💰', text: `100% Refund Guarantee`, color: '#8338EC' },
     { emoji: '⏰', text: 'Team Reaches in 30 Min', color: '#FF006E' },
   ];
 

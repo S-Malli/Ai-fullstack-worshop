@@ -1,39 +1,33 @@
 import { useState, useEffect } from 'react';
 
-const STORAGE_KEY = 'ai-digitalgen-countdown-v2';
-const COUNTDOWN_MINUTES = 69; // 1 hour 9 minutes
+export function useCountdown(targetDate) {
+  // Memoize the end time for the fallback to prevent it shifting every second
+  const [endTime] = useState(() => {
+    if (targetDate) return new Date(targetDate).getTime();
+    // Fallback: 1 hour 9 mins from the first time this hook runs
+    return Date.now() + 69 * 60 * 1000;
+  });
 
-export function useCountdown() {
-  const getEndTime = () => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      const endTime = parseInt(stored, 10);
-      if (endTime > Date.now()) return endTime;
-    }
-    const endTime = Date.now() + COUNTDOWN_MINUTES * 60 * 1000;
-    localStorage.setItem(STORAGE_KEY, endTime.toString());
-    return endTime;
-  };
-
-  const calcRemaining = (end) => {
-    const diff = Math.max(0, end - Date.now());
+  const calcRemaining = () => {
+    const diff = Math.max(0, endTime - Date.now());
+    
     return {
-      hours: Math.floor(diff / (1000 * 60 * 60)),
+      days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
       minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
       seconds: Math.floor((diff % (1000 * 60)) / 1000),
       total: diff,
     };
   };
 
-  const [endTime] = useState(getEndTime);
-  const [remaining, setRemaining] = useState(() => calcRemaining(endTime));
+  const [remaining, setRemaining] = useState(calcRemaining());
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setRemaining(calcRemaining(endTime));
+      setRemaining(calcRemaining());
     }, 1000);
     return () => clearInterval(timer);
-  }, [endTime]);
+  }, [targetDate]);
 
   return remaining;
 }

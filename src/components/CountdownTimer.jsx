@@ -1,7 +1,7 @@
 import { useCountdown } from '../hooks/useCountdown';
 
 export default function CountdownTimer({ className = '' }) {
-  const { hours, minutes, seconds } = useCountdown(24);
+  const { hours, minutes, seconds } = useCountdown();
 
   const pad = (n) => String(n).padStart(2, '0');
 

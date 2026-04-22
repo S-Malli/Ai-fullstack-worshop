@@ -3,6 +3,8 @@ import { CONFIG } from '../constants/config';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const standardPlan = CONFIG.plans[0];
+  const isFree = standardPlan.offerPrice === 0;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
@@ -17,6 +19,12 @@ export default function Navbar() {
           <span className="navbar-logo-icon">AI</span>
           AI Digital Gen
         </a>
+        
+        <div className="navbar-batch-info d-none d-md-flex align-items-center">
+          <span className="navbar-batch-label">Next Batch:</span>
+          <strong className="navbar-batch-time">{CONFIG.workshop.dateTime}</strong>
+        </div>
+
         <div className="navbar-actions">
           <a href={`mailto:${CONFIG.enquiryEmail}`} className="navbar-email" title="Click to email us">
             <span className="navbar-email-icon">✉️</span>
@@ -26,7 +34,7 @@ export default function Navbar() {
             </div>
           </a>
           <a href="#register" className="navbar-cta">
-            Book Now ₹{CONFIG.workshopPrice}
+            Book Now {isFree ? <span className="cta-free">FREE</span> : `₹${standardPlan.offerPrice}`}
           </a>
         </div>
       </div>

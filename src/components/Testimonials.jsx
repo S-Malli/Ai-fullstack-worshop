@@ -18,7 +18,7 @@ const testimonials = [
   {
     name: 'Sowmiya',
     role: 'B.E Student, Madurai',
-    text: "Best ₹99 I've ever spent! Coming from a non-tech background, I never imagined I could build a website. The AI tools made it feel like magic. Highly recommend!",
+    text: "Best Spent! Coming from a non-tech background, I never imagined I could build a website. The AI tools made it feel like magic. Highly recommend!",
     avatar: 'SM',
     gradient: 'linear-gradient(135deg, #FF006E, #3A86FF)',
   },

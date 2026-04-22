@@ -56,9 +56,9 @@ export default function SolutionSection() {
               Using AI + Fullstack
             </h2>
             <p>
-              In just one day, you'll go from zero to deploying a fully
-              functional website. AI handles the heavy lifting while you
-              learn the concepts.
+              Stop feeling stuck in tutorials. AI is your personal mentor that 
+              bridges the gap between "I can't code" and "I built this." 
+              You'll walk out with the confidence to build any idea you have.
             </p>
             <div className="solution-features">
               {features.map((feat, i) => (

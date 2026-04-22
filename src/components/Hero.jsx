@@ -1,10 +1,23 @@
 import CountdownTimer from './CountdownTimer';
 import { CONFIG } from '../constants/config';
+import heroVideo from '../assets/AI_Workshop_Video_Generation.mp4';
 
 export default function Hero() {
+  const workshopTime = CONFIG.workshop.dateTime;
+
   return (
     <section className="hero-section" id="hero">
       <div className="hero-bg">
+        <video 
+          className="hero-video" 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        <div className="hero-video-overlay"></div>
         <div className="hero-orb hero-orb-1"></div>
         <div className="hero-orb hero-orb-2"></div>
         <div className="hero-orb hero-orb-3"></div>
@@ -19,20 +32,25 @@ export default function Hero() {
 
         <h1 className="hero-title">
           Build Your First <span className="gradient-text">Live Website</span>
-          <br />in {CONFIG.workshopDuration} Using AI 
+          <br />in {CONFIG.workshop.duration} Using AI 
         </h1>
 
+        <div className="next-batch-info mb-4">
+          Next Batch: <strong>{workshopTime}</strong>
+        </div>
+
         <p className="hero-subtitle">
-          No coding needed. Learn AI-powered fullstack development and deploy
-          your first project — even if you have zero tech background.
+          No degree? No tech background? <strong>No Problem.</strong> AI is the ultimate equalizer. 
+          Learn to build and deploy real-world apps that get you noticed by recruiters 
+          and jumpstart your career in tech.
         </p>
 
         <div className="hero-cta-group">
           <a href="#register" className="btn-primary" id="hero-cta-btn">
-            🚀 Book Now — Just ₹{CONFIG.workshopPrice}
+            🚀 Book Now — {CONFIG.plans[0].offerPrice === 0 ? 'FREE' : `₹${CONFIG.plans[0].offerPrice}`}
           </a>
-          <a href="#curriculum" className="btn-secondary">
-            See What You'll Learn
+          <a href="#pricing" className="btn-secondary">
+            View Plans
           </a>
         </div>
 
@@ -50,11 +68,11 @@ export default function Hero() {
             <div className="hero-stat-label">Average Rating</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value gradient-text">{CONFIG.workshopDuration}</div>
-            <div className="hero-stat-label">Workshop Duration</div>
+            <div className="hero-stat-value gradient-text">{CONFIG.plans[0].features[0].split(' ')[0]} Hr</div>
+            <div className="hero-stat-label">Duration</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value gradient-text">{CONFIG.workshopLanguage}</div>
+            <div className="hero-stat-value gradient-text">Tamil</div>
             <div className="hero-stat-label">Language</div>
           </div>
         </div>

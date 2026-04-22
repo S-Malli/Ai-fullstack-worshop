@@ -1,28 +1,9 @@
 import { useState } from 'react';
 import { CONFIG } from '../constants/config';
 
-/*
- * Google Sheets Integration:
- * 1. Create a Google Sheet with columns: Name, Email, Phone, Timestamp
- * 2. Go to Extensions > Apps Script
- * 3. Paste this code:
- *
- *    function doPost(e) {
- *      const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
- *      const data = JSON.parse(e.postData.contents);
- *      sheet.appendRow([data.name, data.email, data.phone, new Date()]);
- *      return ContentService.createTextOutput(JSON.stringify({ status: 'success' }))
- *        .setMimeType(ContentService.MimeType.JSON);
- *    }
- *
- * 4. Deploy > New Deployment > Web App > Anyone can access
- * 5. Copy the URL and paste below
- */
-const GOOGLE_SHEET_URL = CONFIG.googleSheetUrl;
-
 export default function LeadForm() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '' });
-  const [status, setStatus] = useState('idle'); // idle | loading | success | error
+  const [form, setForm] = useState({ name: '', email: '', phone: '', plan: 'standard' });
+  const [status, setStatus] = useState('idle');
   const [errorMsg, setErrorMsg] = useState('');
 
   const handleChange = (e) => {
@@ -45,10 +26,10 @@ export default function LeadForm() {
     }
     setErrorMsg('');
     setStatus('loading');
-
+    console.log("form", form)
     try {
-      if (GOOGLE_SHEET_URL) {
-        await fetch(GOOGLE_SHEET_URL, {
+      if (CONFIG.googleSheetUrl) {
+        await fetch(CONFIG.googleSheetUrl, {
           method: 'POST',
           mode: 'no-cors',
           headers: { 'Content-Type': 'application/json' },
@@ -72,7 +53,7 @@ export default function LeadForm() {
               <span className="form-success-icon">🎉</span>
               <h3>Thanks for Registering!</h3>
               <p className="form-success-main">
-                We'll confirm your <strong>seat</strong> and send you the{' '}
+                We'll confirm your <strong>{form.plan} seat</strong> and send you the{' '}
                 <strong>payment link</strong> shortly.
               </p>
               <div className="form-success-info">
@@ -101,7 +82,8 @@ export default function LeadForm() {
             Secure Your <span className="gradient-text">Spot</span>
           </h2>
           <p className="section-subtitle">
-            Only <strong>11 seats left!</strong> Fill in your details and join the next weekend batch.
+            Take the first step towards your new career. Join a community of 
+            determined students building the future with AI.
           </p>
         </div>
 
@@ -148,6 +130,23 @@ export default function LeadForm() {
               />
             </div>
 
+            <div className="form-group">
+              <label className="form-label" htmlFor="form-plan">Select Plan</label>
+              <select
+                className="form-input"
+                id="form-plan"
+                name="plan"
+                value={form.plan}
+                onChange={handleChange}
+              >
+                {CONFIG.plans.filter(p => p.enabled).map(plan => (
+                  <option key={plan.id} value={plan.id}>
+                    {plan.name} — {plan.offerPrice === 0 ? 'FREE' : `₹${plan.offerPrice}`}
+                  </option>
+                ))}
+              </select>
+            </div>
+
             {errorMsg && <div className="form-error">{errorMsg}</div>}
 
             <button
@@ -156,12 +155,12 @@ export default function LeadForm() {
               id="form-submit-btn"
               disabled={status === 'loading'}
             >
-              {status === 'loading' ? 'Submitting...' : `🚀 Register Now — ₹${CONFIG.workshopPrice} Only`}
+              {status === 'loading' ? 'Submitting...' : `🚀 Register Now — ${form.plan === 'standard' && CONFIG.plans[0].offerPrice === 0 ? 'FREE' : `₹${CONFIG.plans.find(p => p.id === form.plan)?.offerPrice}`} Only`}
             </button>
 
             <div className="form-trust">
               <span className="form-trust-item">🔒 Secure</span>
-              <span className="form-trust-item">💰 ₹{CONFIG.workshopPrice} Refund Guarantee</span>
+              <span className="form-trust-item">💰 {form.plan === 'standard' && CONFIG.plans[0].offerPrice === 0 ? 'Value' : 'Refund'} Guarantee</span>
               <span className="form-trust-item">📅 Weekend Only</span>
             </div>
           </form>
@@ -170,4 +169,3 @@ export default function LeadForm() {
     </section>
   );
 }
-

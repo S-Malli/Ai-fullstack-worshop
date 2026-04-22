@@ -16,10 +16,6 @@ export default function StickyCTA() {
 
   return (
     <div className="sticky-cta" id="sticky-cta">
-      <div className="sticky-cta-text">
-        <strong>₹{CONFIG.workshopPrice} Only</strong>
-        Limited time offer
-      </div>
       <a href="#register" className="sticky-cta-btn">
         Book Now 🚀
       </a>

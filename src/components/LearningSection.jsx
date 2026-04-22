@@ -8,7 +8,6 @@ export default function LearningSection() {
       title: 'What is AI in Development?',
       tag: 'Hook',
       tagColor: 'tag-hook',
-      duration: '20 min',
       points: [
         'Introduction to AI-powered development',
         'LIVE Demo — Watch a website get built in minutes',
@@ -22,7 +21,6 @@ export default function LearningSection() {
       title: 'Build with AI Tools',
       tag: 'Hands-On',
       tagColor: 'tag-handson',
-      duration: '30 min',
       points: [
         'Use ChatGPT & code generators to build UI',
         'Generate backend logic with AI assistance',
@@ -36,7 +34,6 @@ export default function LearningSection() {
       title: 'Fullstack Flow',
       tag: 'Fullstack',
       tagColor: 'tag-fullstack',
-      duration: '30 min',
       points: [
         'Frontend basics with React',
         'Backend API with Node.js',
@@ -50,7 +47,6 @@ export default function LearningSection() {
       title: 'Deploy Your Site LIVE',
       tag: 'WOW Moment',
       tagColor: 'tag-deploy',
-      duration: '20 min',
       points: [
         'Push code to GitHub',
         'Deploy to the internet for free',
@@ -64,7 +60,6 @@ export default function LearningSection() {
       title: 'Career & Internship Guide',
       tag: 'Career',
       tagColor: 'tag-career',
-      duration: '20 min',
       points: [
         'How to get internships using your project',
         'Showcase your portfolio to recruiters',
@@ -80,7 +75,7 @@ export default function LearningSection() {
         <div className="reveal" style={{ textAlign: 'center' }}>
           <span className="section-label">📚 Workshop Curriculum</span>
           <h2 className="section-title">
-            What You'll <span className="gradient-text">Cover in {CONFIG.workshopDuration}</span>
+            What You'll <span className="gradient-text">Learn</span>
           </h2>
           <p className="section-subtitle">
             5 power-packed sessions. Hands-on learning. You'll walk out with a
@@ -113,7 +108,6 @@ export default function LearningSection() {
                   <span className={`curriculum-tag ${session.tagColor}`}>
                     {session.tag}
                   </span>
-                  <span className="curriculum-duration">⏱ {session.duration}</span>
                 </div>
               </div>
               <ul className="curriculum-points">

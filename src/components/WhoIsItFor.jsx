@@ -41,7 +41,8 @@ export default function WhoIsItFor() {
             Designed for <span className="gradient-text">Future Creators</span>
           </h2>
           <p className="section-subtitle">
-            Whether you are a beginner or looking to upgrade, this workshop is for you.
+            This isn't just for "techies." It's for anyone with the curiosity to 
+            learn and the drive to build. <strong>Your background doesn't define your potential.</strong>
           </p>
         </div>
 

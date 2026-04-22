@@ -15,7 +15,7 @@ export default function Marquee() {
           <span className="marquee-dot">✦</span>
           <span className="marquee-item">📅 <strong>Weekend Sessions</strong> — Comfortable Timing</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">💰 Not Satisfied? <strong>100% Refund ₹{CONFIG.workshopPrice}</strong></span>
+          <span className="marquee-item">💰 Not Satisfied? <strong>100% Refund</strong></span>
           <span className="marquee-dot">✦</span>
 
           <span className="marquee-item">🔥 Only <strong>11 Seats Left</strong> — Register Now!</span>
@@ -28,7 +28,7 @@ export default function Marquee() {
           <span className="marquee-dot">✦</span>
           <span className="marquee-item">📅 <strong>Weekend Sessions</strong> — Comfortable Timing</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">💰 Not Satisfied? <strong>100% Refund ₹{CONFIG.workshopPrice}</strong></span>
+          <span className="marquee-item">💰 Not Satisfied? <strong>100% Refund</strong></span>
           <span className="marquee-dot">✦</span>
         </div>
       </div>

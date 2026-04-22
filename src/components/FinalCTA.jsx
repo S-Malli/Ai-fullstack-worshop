@@ -2,6 +2,9 @@ import CountdownTimer from './CountdownTimer';
 import { CONFIG } from '../constants/config';
 
 export default function FinalCTA() {
+  const standardPlan = CONFIG.plans[0];
+  const price = standardPlan.offerPrice === 0 ? 'FREE' : `₹${standardPlan.offerPrice}`;
+
   return (
     <section className="final-cta-section section" id="final-cta">
       <div className="final-cta-bg"></div>
@@ -9,25 +12,32 @@ export default function FinalCTA() {
         <div className="final-cta-content reveal">
           <span className="section-label">⏰ Don't Wait</span>
           <h2 className="section-title">
-            This Offer <span className="gradient-text">Won't Last</span>
+            Your Tech Journey <span className="gradient-text">Starts Today</span>
           </h2>
+          <p className="section-subtitle mb-4">
+            Don't let the fear of coding hold you back. Thousands of students 
+            just like you have transformed their careers with AI. 
+            <strong>You are next.</strong>
+          </p>
           <p className="final-cta-urgency">
             🔥 Only 11 seats left — Offer expires in:
           </p>
           <CountdownTimer />
           <div className="final-cta-price">
-            <span className="price-original">₹999</span>
-            <span className="price-current">₹{CONFIG.workshopPrice}</span>
-            <span className="price-tag">90% OFF</span>
+            <span className="price-original">₹{standardPlan.originalPrice}</span>
+            <span className={`price-current ${standardPlan.offerPrice === 0 ? 'price-free' : ''}`}>
+              {price}
+            </span>
+            <span className="price-tag">Limited Time Offer</span>
           </div>
           <a href="#register" className="btn-primary" id="final-cta-btn">
-            🚀 Book Your Seat Now — ₹{CONFIG.workshopPrice}
+            🚀 Book Your Seat Now — {price} Only
           </a>
 
           <div className="final-cta-guarantees">
             <div className="guarantee-item">
               <span className="guarantee-icon">💰</span>
-              <span><strong>100% Refund</strong> — Not satisfied? Get your ₹{CONFIG.workshopPrice} back</span>
+              <span><strong>Value Guarantee</strong> — 100% satisfaction or personal guidance</span>
             </div>
             <div className="guarantee-item">
               <span className="guarantee-icon">📅</span>
@@ -39,7 +49,7 @@ export default function FinalCTA() {
             </div>
             <div className="guarantee-item">
               <span className="guarantee-icon">🗣️</span>
-              <span><strong>{CONFIG.workshopLanguage} Language</strong> — Easy to understand for everyone</span>
+              <span><strong>Tamil Language</strong> — Easy to understand for everyone</span>
             </div>
           </div>
         </div>

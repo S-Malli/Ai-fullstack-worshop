@@ -1,9 +1,9 @@
 export const CONFIG = {
   workshop: {
     title: "AI + Fullstack Project Workshop",
-    dateTime: "24 Apr 2026 - 8 PM",
+    dateTime: "02 May 2026 - 7 PM",
     showDateTime: true,
-    duration: "1 Day",
+    duration: "1 Hour",
   },
   workshopLanguage: 'Tamil',
   whatsappNumber: '919790321115',
@@ -14,17 +14,16 @@ export const CONFIG = {
       id: "standard",
       enabled: true,
       name: "Standard",
-      originalPrice: 299,
+      originalPrice: 99,
       offerPrice: 0,
       badge: "🔥 FREE Today",
       highlight: true,
       features: [
-        "1 Hr Live Workshop (Tamil)",
-        "Step-by-Step AI App Build",
-        "Introduction to No-Code Tools",
-        "Live Q&A Session",
-        "Career Roadmap Guidance",
-        "Special Offer on End Session"
+        "1-hour live workshop",
+        "AI basics + project demo",
+        "Tamil explanation",
+        "Doubt clearing",
+        "Special offer at end"
       ]
     },
     {
@@ -36,12 +35,11 @@ export const CONFIG = {
       badge: "⭐ Most Popular",
       highlight: false,
       features: [
-        "Everything in Standard +",
-        "3 Days Intensive Training",
-        "Hands-on Live Project Build",
-        "Resume & LinkedIn Optimization",
-        "Internship Application Tips",
-        "Premium AI Toolkits Access",
+        "3-day workshop",
+        "Live project with support",
+        "Resume building",
+        "Internship guidance",
+        "Real-world tips",
         "Verified Course Certificate",
         "Priority Support for 1 Month"
       ]
@@ -55,13 +53,13 @@ export const CONFIG = {
       badge: "🚀 Best Value",
       highlight: false,
       features: [
-        "Everything in Premium +",
         "1-1 Personal Live Guidance",
-        "Project Hosting (1 Year Free)",
+        "Project hosting  (1 Year Free)",
+        "Resume + portfolio",
+        "Internship & placement support",
+        "Client & freelancing guidance",
+        "Digital marketing",
         "Advanced Chatbot Development",
-        "Client Acquisition Secrets",
-        "Digital Marketing Mastery",
-        "Direct Placement Referrals",
         "Lifetime Community Access"
       ]
     }

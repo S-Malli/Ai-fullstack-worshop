@@ -7,28 +7,28 @@ export default function Marquee() {
         <div className="marquee-content">
           <span className="marquee-item">🔥 Only <strong>11 Seats Left</strong> — Register Now!</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">🎯 <strong>Live Session</strong> in <strong>{CONFIG.workshopLanguage}</strong></span>
+          <span className="marquee-item">🎯 <strong>No Coding Needed</strong> — Zero to Project in 1 Hour</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">💡 <strong>Live Demo</strong> + <strong>Doubt Clearing</strong></span>
+          <span className="marquee-item">🚀 <strong>Build & Deploy LIVE</strong> — Your first website today</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">🚀 <strong>Easy to Understand</strong> — No Coding Background Needed</span>
+          <span className="marquee-item">📄 <strong>Add to Resume</strong> — Stand out from the crowd</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">📅 <strong>Weekend Sessions</strong> — Comfortable Timing</span>
+          <span className="marquee-item">💼 <strong>Internship Guidance</strong> — How to get your first job</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">💰 Not Satisfied? <strong>100% Refund</strong></span>
+          <span className="marquee-item">📅 <strong>Weekend Only</strong> — Practical session with support</span>
           <span className="marquee-dot">✦</span>
 
           <span className="marquee-item">🔥 Only <strong>11 Seats Left</strong> — Register Now!</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">🎯 <strong>Live Session</strong> in <strong>{CONFIG.workshopLanguage}</strong></span>
+          <span className="marquee-item">🎯 <strong>No Coding Needed</strong> — Zero to Project in 1 Hour</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">💡 <strong>Live Demo</strong> + <strong>Doubt Clearing</strong></span>
+          <span className="marquee-item">🚀 <strong>Build & Deploy LIVE</strong> — Your first website today</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">🚀 <strong>Easy to Understand</strong> — No Coding Background Needed</span>
+          <span className="marquee-item">📄 <strong>Add to Resume</strong> — Stand out from the crowd</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">📅 <strong>Weekend Sessions</strong> — Comfortable Timing</span>
+          <span className="marquee-item">💼 <strong>Internship Guidance</strong> — How to get your first job</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">💰 Not Satisfied? <strong>100% Refund</strong></span>
+          <span className="marquee-item">📅 <strong>Weekend Only</strong> — Practical session with support</span>
           <span className="marquee-dot">✦</span>
         </div>
       </div>

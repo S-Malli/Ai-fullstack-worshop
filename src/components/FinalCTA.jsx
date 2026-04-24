@@ -12,12 +12,11 @@ export default function FinalCTA() {
         <div className="final-cta-content reveal">
           <span className="section-label">⏰ Don't Wait</span>
           <h2 className="section-title">
-            Your Tech Journey <span className="gradient-text">Starts Today</span>
+            Don’t miss this opportunity to <span className="gradient-text">start your tech journey</span>
           </h2>
           <p className="section-subtitle mb-4">
-            Don't let the fear of coding hold you back. Thousands of students 
-            just like you have transformed their careers with AI. 
-            <strong>You are next.</strong>
+            Build your first project this weekend and take one step closer to your internship. 
+            <strong> 6+ years of real industry experience at your fingertips.</strong>
           </p>
           <p className="final-cta-urgency">
             🔥 Only 11 seats left — Offer expires in:
@@ -31,25 +30,25 @@ export default function FinalCTA() {
             <span className="price-tag">Limited Time Offer</span>
           </div>
           <a href="#register" className="btn-primary" id="final-cta-btn">
-            🚀 Book Your Seat Now — {price} Only
+            🔥 Reserve My Seat Now — {price} Only
           </a>
 
           <div className="final-cta-guarantees">
             <div className="guarantee-item">
-              <span className="guarantee-icon">💰</span>
-              <span><strong>Value Guarantee</strong> — 100% satisfaction or personal guidance</span>
+              <span className="guarantee-icon">👨‍🏫</span>
+              <span><strong>6+ Years Experience</strong> — Real industry guidance</span>
             </div>
             <div className="guarantee-item">
-              <span className="guarantee-icon">📅</span>
-              <span><strong>Weekend Sessions</strong> — Comfortable timing for students</span>
+              <span className="guarantee-icon">👨‍🎓</span>
+              <span><strong>Guided 1000+ Students</strong> — Proven success roadmap</span>
             </div>
             <div className="guarantee-item">
-              <span className="guarantee-icon">⏰</span>
-              <span><strong>Team reaches in 30 min</strong> — After registration confirmation</span>
+              <span className="guarantee-icon">🛠️</span>
+              <span><strong>Practical Approach</strong> — No boring theory, only building</span>
             </div>
             <div className="guarantee-item">
-              <span className="guarantee-icon">🗣️</span>
-              <span><strong>Tamil Language</strong> — Easy to understand for everyone</span>
+              <span className="guarantee-icon">🚀</span>
+              <span><strong>Fast Results</strong> — Deploy your live project in 1 hour</span>
             </div>
           </div>
         </div>

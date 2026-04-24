@@ -5,65 +5,65 @@ export default function LearningSection() {
     {
       number: '01',
       color: '#3A86FF',
-      title: 'What is AI in Development?',
-      tag: 'Hook',
+      title: 'No Coding Background Needed',
+      tag: 'Foundation',
       tagColor: 'tag-hook',
       points: [
-        'Introduction to AI-powered development',
-        'LIVE Demo — Watch a website get built in minutes',
-        'Why AI is the future of web development',
+        'How AI makes coding accessible for everyone',
+        'Zero prerequisite knowledge required',
+        'Setting up your AI-powered workspace',
       ],
-      emoji: '🤖',
+      emoji: '🎯',
     },
     {
       number: '02',
       color: '#8338EC',
-      title: 'Build with AI Tools',
+      title: 'Build Project Using AI',
       tag: 'Hands-On',
       tagColor: 'tag-handson',
       points: [
-        'Use ChatGPT & code generators to build UI',
-        'Generate backend logic with AI assistance',
-        'Build a real project: Portfolio / Landing Page',
+        'Prompt engineering for web development',
+        'Generating UI and logic with AI tools',
+        'Real-time project building session',
       ],
-      emoji: '⚡',
+      emoji: '🤖',
     },
     {
       number: '03',
       color: '#FF006E',
-      title: 'Fullstack Flow',
-      tag: 'Fullstack',
-      tagColor: 'tag-fullstack',
-      points: [
-        'Frontend basics with React',
-        'Backend API with Node.js',
-        'Connect frontend + backend together',
-      ],
-      emoji: '🔗',
-    },
-    {
-      number: '04',
-      color: '#22c55e',
-      title: 'Deploy Your Site LIVE',
-      tag: 'WOW Moment',
+      title: 'Deploy Live in 1 Day',
+      tag: 'Launch',
       tagColor: 'tag-deploy',
       points: [
-        'Push code to GitHub',
-        'Deploy to the internet for free',
-        'Get your own live website link! 🎉',
+        'Connecting your project to the internet',
+        'Free hosting and domain setup',
+        'Get a live link you can share immediately',
       ],
       emoji: '🚀',
     },
     {
+      number: '04',
+      color: '#22c55e',
+      title: 'Add to Resume & Portfolio',
+      tag: 'Branding',
+      tagColor: 'tag-fullstack',
+      points: [
+        'Showcasing AI projects to recruiters',
+        'Optimizing your GitHub and LinkedIn',
+        'Building a professional project description',
+      ],
+      emoji: '📄',
+    },
+    {
       number: '05',
       color: '#f59e0b',
-      title: 'Career & Internship Guide',
+      title: 'Get Internship Guidance',
       tag: 'Career',
       tagColor: 'tag-career',
       points: [
-        'How to get internships using your project',
-        'Showcase your portfolio to recruiters',
-        'LinkedIn & GitHub profile tips',
+        'Applying for internships with your new skills',
+        'Interview prep for AI-enhanced roles',
+        'Exclusive internship resource access',
       ],
       emoji: '💼',
     },
@@ -75,11 +75,11 @@ export default function LearningSection() {
         <div className="reveal" style={{ textAlign: 'center' }}>
           <span className="section-label">📚 Workshop Curriculum</span>
           <h2 className="section-title">
-            What You'll <span className="gradient-text">Learn</span>
+            What You Will <span className="gradient-text">Build</span>
           </h2>
           <p className="section-subtitle">
-            5 power-packed sessions. Hands-on learning. You'll walk out with a
-            live project. Workshop conducted in <strong>{CONFIG.workshopLanguage}</strong>.
+            By the end of this workshop, you will have: <strong>A live website, a project to showcase, 
+            and the confidence to apply for internships.</strong>
           </p>
         </div>
 

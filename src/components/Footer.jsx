@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer" id="footer">
       <div className="container">
         <div className="footer-content">
-          <span className="footer-logo gradient-text">AI Digital Gen</span>
+          <span className="footer-logo gradient-text">AI DigitalGen</span>
           <div className="footer-links">
             <a href="#hero">Home</a>
             <a href="#learn">Curriculum</a>
@@ -13,7 +13,7 @@ export default function Footer() {
             <a href="#register">Register</a>
           </div>
           <p className="footer-text">
-            © {year} AI Digital Gen. All rights reserved.
+            © {year} AI DigitalGen. All rights reserved.
           </p>
         </div>
       </div>

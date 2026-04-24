@@ -82,8 +82,8 @@ export default function LeadForm() {
             Secure Your <span className="gradient-text">Spot</span>
           </h2>
           <p className="section-subtitle">
-            Take the first step towards your new career. Join a community of 
-            determined students building the future with AI.
+            Build your first project this weekend and take one step closer to your internship. 
+            Join hundreds of students already building their future.
           </p>
         </div>
 
@@ -155,12 +155,12 @@ export default function LeadForm() {
               id="form-submit-btn"
               disabled={status === 'loading'}
             >
-              {status === 'loading' ? 'Submitting...' : `🚀 Register Now — ${form.plan === 'standard' && CONFIG.plans[0].offerPrice === 0 ? 'FREE' : `₹${CONFIG.plans.find(p => p.id === form.plan)?.offerPrice}`} Only`}
+              {status === 'loading' ? 'Submitting...' : `🔥 Reserve My Seat Now — ${form.plan === 'standard' && CONFIG.plans[0].offerPrice === 0 ? 'FREE' : `₹${CONFIG.plans.find(p => p.id === form.plan)?.offerPrice}`} Only`}
             </button>
 
             <div className="form-trust">
               <span className="form-trust-item">🔒 Secure</span>
-              <span className="form-trust-item">💰 {form.plan === 'standard' && CONFIG.plans[0].offerPrice === 0 ? 'Value' : 'Refund'} Guarantee</span>
+              <span className="form-trust-item">👨‍🏫 Practical Guidance</span>
               <span className="form-trust-item">📅 Weekend Only</span>
             </div>
           </form>

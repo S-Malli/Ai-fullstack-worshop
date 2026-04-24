@@ -1,22 +1,28 @@
 export default function ProblemSection() {
   const problems = [
     {
-      icon: '😤',
-      title: 'No Coding Skills?',
+      icon: '😩',
+      title: 'No Coding Knowledge',
       description:
-        "You've tried learning to code but tutorials feel endless, confusing, and never lead to a real project you can show off.",
+        "You feel stuck because you don't know where to start or how to write code that actually works.",
     },
     {
       icon: '📂',
-      title: 'No Real Projects?',
+      title: 'No Real Projects',
       description:
-        "Your resume is empty. You have no portfolio, no GitHub, and nothing to demonstrate your skills in an interview.",
+        "Your resume lacks real-world projects, making it hard to stand out from thousands of other students.",
     },
     {
       icon: '😰',
-      title: 'Placement Struggles?',
+      title: 'Not Getting Internships',
       description:
-        "Companies want practical skills and projects. Without hands-on experience, getting placed feels nearly impossible.",
+        "Companies are rejecting you because you don't have practical experience or a portfolio to show.",
+    },
+    {
+      icon: '🤔',
+      title: 'Confused Where to Start',
+      description:
+        "You're overwhelmed by too many tutorials and don't have a clear roadmap to reach your goals.",
     },
   ];
 
@@ -26,10 +32,10 @@ export default function ProblemSection() {
         <div className="reveal" style={{ textAlign: 'center' }}>
           <span className="section-label">⚡ Sound Familiar?</span>
           <h2 className="section-title">
-            You're <span className="gradient-text">Not Alone</span>
+            You are <span className="gradient-text">Not Alone...</span>
           </h2>
           <p className="section-subtitle">
-            Most college students face these exact same challenges. But there's a better way.
+            Many students struggle with these same issues every day. We're here to help you bridge that gap.
           </p>
         </div>
 

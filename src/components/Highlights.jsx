@@ -2,21 +2,20 @@ import { CONFIG } from '../constants/config';
 
 export default function Highlights() {
   const items = [
-    { emoji: '🗣️', text: `${CONFIG.workshopLanguage} Language`, color: '#8338EC' },
-    { emoji: '💻', text: 'Live Demo Session', color: '#FF006E' },
-    { emoji: '❓', text: 'Doubt Clearing', color: '#22c55e' },
-    { emoji: '📅', text: 'Weekend Only', color: '#3A86FF' },
-    { emoji: '💰', text: `100% Refund Guarantee`, color: '#8338EC' },
-    { emoji: '⏰', text: 'Team Reaches in 30 Min', color: '#FF006E' },
+    { emoji: '🎯', text: 'No coding background required', color: '#8338EC' },
+    { emoji: '🛠️', text: '100% practical session', color: '#FF006E' },
+    { emoji: '🚀', text: 'Build project LIVE with guidance', color: '#22c55e' },
+    { emoji: '💡', text: 'Learn by doing, not watching', color: '#3A86FF' },
+    { emoji: '🤝', text: 'Personal support during session', color: '#8338EC' },
   ];
 
   return (
     <section className="highlights-section" id="highlights">
       <div className="container">
         <div className="reveal" style={{ textAlign: 'center' }}>
-          <span className="section-label">✨ Why Choose Us</span>
+          <span className="section-label">✨ Unique Value</span>
           <h2 className="section-title">
-            Everything You Need to <span className="gradient-text">Succeed</span>
+            Why This Is <span className="gradient-text">Different</span>
           </h2>
         </div>
         <div className="highlights-grid reveal">

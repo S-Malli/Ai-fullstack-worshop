@@ -1,9 +1,10 @@
 export default function SolutionSection() {
   const features = [
-    { icon: '🤖', text: 'Build with AI assistance — no prior coding needed' },
-    { icon: '🌐', text: 'Deploy a live website anyone can visit' },
-    { icon: '📱', text: 'Responsive design that works on all devices' },
-    { icon: '💼', text: 'Add a real project to your resume & portfolio' },
+    { icon: '🤖', text: 'Build a real working project using AI' },
+    { icon: '🚀', text: 'Deploy your project live' },
+    { icon: '📄', text: 'Add project to your resume' },
+    { icon: '👔', text: 'Understand how to approach HR' },
+    { icon: '🎯', text: 'Learn internship strategy' },
   ];
 
   return (
@@ -51,9 +52,7 @@ export default function SolutionSection() {
           <div className="solution-text reveal-right">
             <span className="section-label">💡 The Solution</span>
             <h2>
-              Build a{' '}
-              <span className="gradient-text">Real Project</span>{' '}
-              Using AI + Fullstack
+              This workshop will <span className="gradient-text">help you:</span>
             </h2>
             <p>
               Stop feeling stuck in tutorials. AI is your personal mentor that 

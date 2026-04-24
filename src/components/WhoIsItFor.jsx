@@ -1,34 +1,24 @@
 export default function WhoIsItFor() {
   const categories = [
     {
-      title: 'Non-IT Background',
-      description: 'Zero coding knowledge? No problem. We start from the absolute basics.',
-      emoji: '💡',
-    },
-    {
       title: 'College Students',
-      description: 'Perfect for students looking to build real-world tech skills early.',
+      description: 'BCA, BSc, BE, BTech, or any degree. Perfect for building tech skills early.',
       emoji: '🎓',
     },
     {
-      title: 'Internship Seekers',
-      description: 'Stand out from the crowd with a live deployed project on your profile.',
-      emoji: '🚀',
+      title: 'Non-IT Background',
+      description: 'Zero coding knowledge? No problem. We start from absolute basics.',
+      emoji: '💡',
     },
     {
-      title: 'Final Year Projects',
-      description: 'Get expert guidance on building and deploying your final year project.',
+      title: 'Final Year Students',
+      description: 'Need a solid project for your final year? Build and deploy it here.',
       emoji: '📚',
     },
     {
-      title: 'Resume Weightage',
-      description: 'Add "AI-Powered Fullstack Developer" to your resume and get noticed.',
-      emoji: '📄',
-    },
-    {
-      title: 'AI Trend Interests',
-      description: 'Stay ahead of the curve by learning the latest AI development tools.',
-      emoji: '🤖',
+      title: 'Internship Seekers',
+      description: 'Stand out from the crowd with a live deployed project on your resume.',
+      emoji: '🚀',
     },
   ];
 

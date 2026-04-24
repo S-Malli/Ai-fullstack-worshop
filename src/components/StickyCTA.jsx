@@ -16,8 +16,12 @@ export default function StickyCTA() {
 
   return (
     <div className="sticky-cta" id="sticky-cta">
+      <a href={`mailto:${CONFIG.enquiryEmail}`} className="sticky-cta-text">
+        <span>Enquiry:</span>
+        <strong>{CONFIG.enquiryEmail}</strong>
+      </a>
       <a href="#register" className="sticky-cta-btn">
-        Book Now 🚀
+        Register Now 🚀
       </a>
     </div>
   );

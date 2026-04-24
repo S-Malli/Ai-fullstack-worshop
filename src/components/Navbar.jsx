@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="container">
         <a href="#" className="navbar-logo">
           <span className="navbar-logo-icon">AI</span>
-          AI Digital Gen
+          AI DigitalGen
         </a>
         
         <div className="navbar-batch-info d-none d-md-flex align-items-center">

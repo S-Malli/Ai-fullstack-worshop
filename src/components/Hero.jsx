@@ -27,12 +27,12 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="hero-badge-dot"></span>
-          Live Workshop · Tamil · Limited Seats
+          6+ Years Industry Experience · Live Workshop · Tamil
         </div>
 
         <h1 className="hero-title">
-          Build Your First <span className="gradient-text">Live Website</span>
-          <br />in {CONFIG.workshop.duration} Using AI 
+          Build & Deploy Your <span className="gradient-text">First Project</span>
+          <br />in 1 Hour <span className="gradient-text">(No Coding Needed)</span>
         </h1>
 
         <div className="next-batch-info mb-4">
@@ -40,18 +40,21 @@ export default function Hero() {
         </div>
 
         <p className="hero-subtitle">
-          No degree? No tech background? <strong>No Problem.</strong> AI is the ultimate equalizer. 
-          Learn to build and deploy real-world apps that get you noticed by recruiters 
-          and jumpstart your career in tech.
+          Perfect for students & freshers – create a real project, add it to your resume, 
+          and get internship-ready using AI. <strong>Practical approach. Guided success.</strong>
         </p>
 
         <div className="hero-cta-group">
           <a href="#register" className="btn-primary" id="hero-cta-btn">
-            🚀 Book Now — {CONFIG.plans[0].offerPrice === 0 ? 'FREE' : `₹${CONFIG.plans[0].offerPrice}`}
+            🚀 Book Your Seat Now
           </a>
           <a href="#pricing" className="btn-secondary">
             View Plans
           </a>
+        </div>
+
+        <div className="urgency-line" style={{ marginTop: '1rem', color: '#FF006E', fontWeight: 'bold', textAlign: 'center' }}>
+          ⏳ Limited seats – Only few spots left for this weekend
         </div>
 
         <div className="countdown-inline">
@@ -68,8 +71,8 @@ export default function Hero() {
             <div className="hero-stat-label">Average Rating</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value gradient-text">{CONFIG.plans[0].features[0].split(' ')[0]} Hr</div>
-            <div className="hero-stat-label">Duration</div>
+            <div className="hero-stat-value gradient-text">{CONFIG.workshop.duration}</div>
+            <div className="hero-stat-label">Live Session</div>
           </div>
           <div className="hero-stat">
             <div className="hero-stat-value gradient-text">Tamil</div>

@@ -3,11 +3,7 @@ import { CONFIG } from '../constants/config';
 export default function WhatsAppButton() {
   const whatsappNumber = CONFIG.whatsappNumber;
   const message = encodeURIComponent(
-    `Hi! I Interested to join the AI Fullstack Workshop
-      Name: 
-      Email: 
-      Phone: 
-      `
+    `Hi Mallikumar! I Interested to join the AI Fullstack Workshop`
   );
   const url = `https://wa.me/${whatsappNumber}?text=${message}`;
 

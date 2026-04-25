@@ -20,7 +20,7 @@ export default function StickyCTA() {
         <span>Enquiry:</span>
         <strong>{CONFIG.enquiryEmail}</strong>
       </a>
-      <a href="#register" className="sticky-cta-btn">
+      <a href="/#register" className="sticky-cta-btn">
         Register Now 🚀
       </a>
     </div>

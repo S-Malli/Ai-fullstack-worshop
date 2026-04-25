@@ -17,6 +17,8 @@
 .navbar-email:hover strong { color: var(--purple); }
 .navbar-cta { background: var(--gradient-primary); color: white; padding: 9px 22px; border-radius: var(--radius-full); font-weight: 600; font-size: 0.85rem; transition: transform 0.3s, box-shadow 0.3s; box-shadow: var(--shadow-cta); white-space: nowrap; }
 .navbar-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(131, 56, 236, 0.4); }
+.navbar-link { font-size: 0.9rem; font-weight: 600; color: var(--purple); text-decoration: none; padding: 6px 12px; border-radius: var(--radius-md); transition: all 0.3s ease; background: rgba(131,56,236,0.06); border: 1px solid rgba(131,56,236,0.2); }
+.navbar-link:hover, .navbar-link:focus { background: rgba(131,56,236,0.12); color: var(--purple); border-color: rgba(131,56,236,0.4); outline: none; transform: translateY(-1px); }
 
 /* === Marquee === */
 .marquee-wrapper { position: fixed; top: 62px; left: 0; right: 0; z-index: 999; background: var(--gradient-full); overflow: hidden; padding: 8px 0; }
@@ -238,6 +240,7 @@
   .navbar-actions { gap: 8px; }
   .navbar-email-text { display: none; }
   .navbar-email { font-size: 1.15rem; }
+  .navbar-link { padding: 4px 8px; font-size: 0.8rem; }
   .navbar-cta { padding: 6px 14px; font-size: 0.72rem; }
   .curriculum-card { padding: 20px 18px; }
   .curriculum-card-header { flex-direction: column; gap: 10px; }
@@ -507,4 +510,11 @@
   width: 100%;
   display: block;
   border-radius: 16px;
+}
+
+@media (max-width: 500px) {
+  .navbar-logo-text { display: none; }
+  .navbar-email { display: none !important; }
+  .navbar-link { padding: 4px 6px; font-size: 0.75rem; }
+  .navbar-cta { padding: 5px 10px; font-size: 0.7rem; }
 }

@@ -1,19 +1,11 @@
 import { useScrollReveal } from './hooks/useScrollReveal';
 import Navbar from './components/Navbar';
-import Marquee from './components/Marquee';
-import Hero from './components/Hero';
-import ProblemSection from './components/ProblemSection';
-import SolutionSection from './components/SolutionSection';
-import LearningSection from './components/LearningSection';
-import Highlights from './components/Highlights';
-import WhoIsItFor from './components/WhoIsItFor';
-import Pricing from './components/Pricing';
-import LeadForm from './components/LeadForm';
-import Testimonials from './components/Testimonials';
-import FinalCTA from './components/FinalCTA';
 import WhatsAppButton from './components/WhatsAppButton';
 import StickyCTA from './components/StickyCTA';
 import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Services from './pages/Services';
 import './App.css';
 
 function App() {
@@ -22,19 +14,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Marquee />
-      <main>
-        <Hero />
-        <Highlights />
-        <WhoIsItFor />
-        <Pricing />
-        <LearningSection />
-        <SolutionSection />
-        <ProblemSection />
-        <LeadForm />
-        <Testimonials />
-        <FinalCTA />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
       <Footer />
       <WhatsAppButton />
       <StickyCTA />

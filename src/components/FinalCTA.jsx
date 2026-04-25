@@ -16,7 +16,7 @@ export default function FinalCTA() {
           </h2>
           <p className="section-subtitle mb-4">
             Build your first project this weekend and take one step closer to your internship. 
-            <strong> 6+ years of real industry experience at your fingertips.</strong>
+            <strong> 10+ years of real industry experience at your fingertips.</strong>
           </p>
           <p className="final-cta-urgency">
             🔥 Only 11 seats left — Offer expires in:
@@ -36,7 +36,7 @@ export default function FinalCTA() {
           <div className="final-cta-guarantees">
             <div className="guarantee-item">
               <span className="guarantee-icon">👨‍🏫</span>
-              <span><strong>6+ Years Experience</strong> — Real industry guidance</span>
+              <span><strong>10+ Years Experience</strong> — Real industry guidance</span>
             </div>
             <div className="guarantee-item">
               <span className="guarantee-icon">👨‍🎓</span>

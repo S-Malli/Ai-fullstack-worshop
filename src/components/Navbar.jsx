@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { CONFIG } from '../constants/config';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -15,17 +16,20 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="container">
-        <a href="#" className="navbar-logo">
+        <Link to="/" className="navbar-logo">
           <span className="navbar-logo-icon">AI</span>
-          AI DigitalGen
-        </a>
-        
-        <div className="navbar-batch-info d-none d-md-flex align-items-center">
-          <span className="navbar-batch-label">Next Free Workshop:</span>
-          <strong className="navbar-batch-time">{CONFIG.workshop.dateTime}</strong>
-        </div>
+          <span className="navbar-logo-text">AI DigitalGen</span>
+        </Link>
 
         <div className="navbar-actions">
+          <div className="navbar-menus" style={{ display: 'flex', gap: '4px' }}>
+            <Link to="/" className="navbar-link">
+              Workshop
+            </Link>
+            <Link to="/services" className="navbar-link">
+              Services
+            </Link>
+          </div>
           <a href={`mailto:${CONFIG.enquiryEmail}`} className="navbar-email" title="Click to email us">
             <span className="navbar-email-icon">✉️</span>
             <div className="navbar-email-text">
@@ -33,7 +37,7 @@ export default function Navbar() {
               <strong>{CONFIG.enquiryEmail}</strong>
             </div>
           </a>
-          <a href="#register" className="navbar-cta">
+          <a href="/#register" className="navbar-cta">
             Book Now {isFree ? <span className="cta-free">FREE</span> : `₹${standardPlan.offerPrice}`}
           </a>
         </div>

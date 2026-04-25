@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="hero-badge-dot"></span>
-          6+ Years Industry Experience · Live Workshop · Tamil
+          10+ Years Industry Experience · Live Workshop · Tamil
         </div>
 
         <h1 className="hero-title">

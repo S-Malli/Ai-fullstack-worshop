@@ -1,7 +1,7 @@
 export const CONFIG = {
   workshop: {
     title: "AI + Fullstack Project Workshop",
-    dateTime: "02 May 2026 - 7 PM",
+    dateTime: "02 May 2026 - 8 PM",
     showDateTime: true,
     duration: "1 Hour",
   },
@@ -20,7 +20,7 @@ export const CONFIG = {
       highlight: true,
       description: "Beginners with zero coding",
       features: [
-        { text: "2-hour live workshop", included: true },
+        { text: "1-hour live workshop", included: true },
         { text: "Build 1 simple AI website", included: true },
         { text: "1 month livecall + whatsapp", included: true },
         { text: "Tamil explanation & doubts", included: true },

@@ -12,9 +12,8 @@ export default function Pricing() {
             Choose Your <span className="gradient-text">Success Path</span>
           </h2>
           <p className="section-subtitle">
-            Don't let money be the barrier to your success. We've made our 
-            world-class training accessible to every student. 
-            <strong>Your future is worth it.</strong>
+            We've made our world-class training accessible to every client. 
+            <strong> Invest in yourself and level up your career.</strong>
           </p>
         </div>
 
@@ -36,11 +35,19 @@ export default function Pricing() {
                 )}
               </div>
 
+              {plan.description && (
+                <div className="plan-description">
+                  {plan.description}
+                </div>
+              )}
+
               <ul className="plan-features">
                 {plan.features.map((feature, i) => (
-                  <li key={i} className="plan-feature">
-                    <span className="plan-feature-icon">✓</span>
-                    <span>{feature}</span>
+                  <li key={i} className={`plan-feature ${feature.included ? '' : 'feature-disabled'}`}>
+                    <span className={`plan-feature-icon ${feature.included ? '' : 'icon-disabled'}`}>
+                      {feature.included ? '✓' : '✗'}
+                    </span>
+                    <span>{feature.text}</span>
                   </li>
                 ))}
               </ul>

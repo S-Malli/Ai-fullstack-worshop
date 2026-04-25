@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
+import { CONFIG } from '../constants/config';
 
 export default function Services() {
+  const whatsappMessage = encodeURIComponent("Hi Mallikumar, I need know the digital marketing leads generation details ");
+  const whatsappUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${whatsappMessage}`;
+
   return (
     <main className="services-page" style={{ paddingTop: '80px' }}>
       {/* Hero Section */}
@@ -102,7 +106,7 @@ export default function Services() {
                 <li className="plan-feature"><span className="plan-feature-icon">✓</span><span>SEO Optimization Basics</span></li>
                 <li className="plan-feature"><span className="plan-feature-icon">✓</span><span>1 Month Support & Maintenance</span></li>
               </ul>
-              <a href="https://wa.me/919790321115" target="_blank" rel="noopener noreferrer" className="plan-btn btn-primary" style={{ textAlign: 'center' }}>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="plan-btn btn-primary" style={{ textAlign: 'center' }}>
                 Contact Us on WhatsApp
               </a>
             </div>

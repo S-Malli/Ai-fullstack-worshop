@@ -1,7 +1,13 @@
 import { CONFIG } from '../constants/config';
 import aidigitalgenLogo from '../assets/aidigitalgen_logo.png';
+import { useLocation } from 'react-router-dom';
 
 export default function WhatsAppButton() {
+  const location = useLocation();
+  if (location.pathname === '/services') {
+    return null;
+  }
+
   const whatsappNumber = CONFIG.whatsappNumber;
   const message = encodeURIComponent(
     `Hi Mallikumar! I Interested to join the AI Fullstack Workshop`

@@ -21,7 +21,7 @@ export default function Navbar() {
         </a>
         
         <div className="navbar-batch-info d-none d-md-flex align-items-center">
-          <span className="navbar-batch-label">Next Batch:</span>
+          <span className="navbar-batch-label">Next Free Workshop:</span>
           <strong className="navbar-batch-time">{CONFIG.workshop.dateTime}</strong>
         </div>
 

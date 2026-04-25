@@ -1,6 +1,7 @@
 import CountdownTimer from './CountdownTimer';
 import { CONFIG } from '../constants/config';
 import heroVideo from '../assets/AI_Workshop_Video_Generation.mp4';
+import introVideo from '../assets/Aifullstackworshop_intro.mp4';
 
 export default function Hero() {
   const workshopTime = CONFIG.workshop.dateTime;
@@ -32,17 +33,8 @@ export default function Hero() {
 
         <h1 className="hero-title">
           Build & Deploy Your <span className="gradient-text">First Project</span>
-          <br />in 1 Hour <span className="gradient-text">(No Coding Needed)</span>
+          <br />in 10 Minutes <span className="gradient-text">(No Coding Needed)</span>
         </h1>
-
-        <div className="next-batch-info mb-4">
-          Next Batch: <strong>{workshopTime}</strong>
-        </div>
-
-        <p className="hero-subtitle">
-          Perfect for students & freshers – create a real project, add it to your resume, 
-          and get internship-ready using AI. <strong>Practical approach. Guided success.</strong>
-        </p>
 
         <div className="hero-cta-group">
           <a href="#register" className="btn-primary" id="hero-cta-btn">
@@ -53,12 +45,23 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="urgency-line" style={{ marginTop: '1rem', color: '#FF006E', fontWeight: 'bold', textAlign: 'center' }}>
-          ⏳ Limited seats – Only few spots left for this weekend
+        <div className="next-batch-info mb-4">
+          Next Free Workshop: <strong>{workshopTime}</strong>
         </div>
 
-        <div className="countdown-inline">
-          <CountdownTimer />
+        <div className="hero-intro-video-container">
+          <video 
+            className="hero-intro-video" 
+            controls 
+            playsInline
+            muted
+            loop
+            autoPlay
+            preload="auto"
+          >
+            <source src={introVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         <div className="hero-stats">
@@ -69,10 +72,6 @@ export default function Hero() {
           <div className="hero-stat">
             <div className="hero-stat-value gradient-text">4.8★</div>
             <div className="hero-stat-label">Average Rating</div>
-          </div>
-          <div className="hero-stat">
-            <div className="hero-stat-value gradient-text">{CONFIG.workshop.duration}</div>
-            <div className="hero-stat-label">Live Session</div>
           </div>
           <div className="hero-stat">
             <div className="hero-stat-value gradient-text">Tamil</div>

@@ -48,7 +48,7 @@ export default function FinalCTA() {
             </div>
             <div className="guarantee-item">
               <span className="guarantee-icon">🚀</span>
-              <span><strong>Fast Results</strong> — Deploy your live project in 1 hour</span>
+              <span><strong>Fast Results</strong> — Deploy your live project in 10 minutes</span>
             </div>
           </div>
         </div>

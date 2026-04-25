@@ -7,7 +7,7 @@ export default function Marquee() {
         <div className="marquee-content">
           <span className="marquee-item">🔥 Only <strong>11 Seats Left</strong> — Register Now!</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">🎯 <strong>No Coding Needed</strong> — Zero to Project in 1 Hour</span>
+          <span className="marquee-item">🎯 <strong>No Coding Needed</strong> — Zero to Project in 10 Minutes</span>
           <span className="marquee-dot">✦</span>
           <span className="marquee-item">🚀 <strong>Build & Deploy LIVE</strong> — Your first website today</span>
           <span className="marquee-dot">✦</span>
@@ -20,7 +20,7 @@ export default function Marquee() {
 
           <span className="marquee-item">🔥 Only <strong>11 Seats Left</strong> — Register Now!</span>
           <span className="marquee-dot">✦</span>
-          <span className="marquee-item">🎯 <strong>No Coding Needed</strong> — Zero to Project in 1 Hour</span>
+          <span className="marquee-item">🎯 <strong>No Coding Needed</strong> — Zero to Project in 10 Minutes</span>
           <span className="marquee-dot">✦</span>
           <span className="marquee-item">🚀 <strong>Build & Deploy LIVE</strong> — Your first website today</span>
           <span className="marquee-dot">✦</span>

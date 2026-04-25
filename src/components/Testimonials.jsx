@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: 'Ganesh',
     role: 'B.Com Student, Coimbatore',
-    text: "எனக்கு coding experience zero தான், இந்த workshopல AI tools use பண்ணி ரொம்ப easyஆ புரிய வைத்தாங்க. Even as a beginner, I built and deployed my first project in just 1 hour!",
+    text: "எனக்கு coding experience zero தான், இந்த workshopல AI tools use பண்ணி ரொம்ப easyஆ புரிய வைத்தாங்க. Even as a beginner, I built and deployed my first project in just 10 minutes!",
     avatar: 'GH',
     gradient: 'linear-gradient(135deg, #3A86FF, #8338EC)',
   },

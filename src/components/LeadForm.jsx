@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CONFIG } from '../constants/config';
+import aidigitalgenLogo from '../assets/aidigitalgen_logo.png';
 
 export default function LeadForm() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', plan: 'standard' });
@@ -26,7 +27,6 @@ export default function LeadForm() {
     }
     setErrorMsg('');
     setStatus('loading');
-    console.log("form", form)
     try {
       if (CONFIG.googleSheetUrl) {
         await fetch(CONFIG.googleSheetUrl, {
@@ -65,6 +65,52 @@ export default function LeadForm() {
                   <span>📅</span>
                   <span>Live classes on <strong>Weekends</strong></span>
                 </div>
+              </div>
+
+              <div style={{ marginTop: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
+                <p style={{ margin: 0, fontWeight: '600', color: 'var(--text-primary)' }}>
+                  Join our WhatsApp Community for updates!
+                </p>
+                <a 
+                  href="https://chat.whatsapp.com/LZt4akjoY7FByukfncLzQH" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '12px',
+                    backgroundColor: '#25D366',
+                    color: 'white',
+                    padding: '12px 24px',
+                    borderRadius: 'var(--radius-md)',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    boxShadow: '0 4px 12px rgba(37, 211, 102, 0.3)',
+                    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 6px 16px rgba(37, 211, 102, 0.4)';
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.transform = 'none';
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(37, 211, 102, 0.3)';
+                  }}
+                >
+                  <img 
+                    src={aidigitalgenLogo} 
+                    alt="AI Digital Gen Logo" 
+                    style={{ 
+                      width: '28px', 
+                      height: '28px', 
+                      objectFit: 'contain', 
+                      borderRadius: '50%',
+                      backgroundColor: 'white',
+                      padding: '2px'
+                    }} 
+                  />
+                  Join WhatsApp Group
+                </a>
               </div>
             </div>
           </div>

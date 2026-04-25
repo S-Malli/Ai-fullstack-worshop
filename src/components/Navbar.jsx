@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { CONFIG } from '../constants/config';
 import { Link } from 'react-router-dom';
+import aidigitalgenLogo from '../assets/aidigitalgen_logo.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,7 +18,11 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="container">
         <Link to="/" className="navbar-logo">
-          <span className="navbar-logo-icon">AI</span>
+          <img 
+            src={aidigitalgenLogo} 
+            alt="AI Digital Gen Logo" 
+            style={{ width: '36px', height: '36px', objectFit: 'contain' }} 
+          />
           <span className="navbar-logo-text">AI DigitalGen</span>
         </Link>
 

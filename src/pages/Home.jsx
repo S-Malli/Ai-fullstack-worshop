@@ -18,9 +18,14 @@ export default function Home() {
       <main>
         <Hero />
         <Highlights />
+        <Testimonials />
         <WhoIsItFor />
         <Pricing />
-        
+        <LearningSection />
+        <SolutionSection />
+        <ProblemSection />
+        <LeadForm />
+
         {/* Business Owners Section */}
         <section className="business-owners-section section" style={{ background: 'var(--bg-secondary)', textAlign: 'center' }}>
           <div className="container reveal">
@@ -34,22 +39,6 @@ export default function Home() {
           </div>
         </section>
 
-        <LearningSection />
-        <SolutionSection />
-        <ProblemSection />
-        <LeadForm />
-        
-        {/* Done-For-You Section */}
-        <section className="dfy-section section" style={{ textAlign: 'center', padding: '40px 0' }}>
-          <div className="container reveal">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>Want us to build for you?</h3>
-            <Link to="/services" className="btn-secondary" style={{ display: 'inline-block' }}>
-              Done-for-you Service
-            </Link>
-          </div>
-        </section>
-
-        <Testimonials />
         <FinalCTA />
       </main>
     </>

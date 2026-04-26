@@ -34,7 +34,9 @@ export const CONFIG = {
         { text: "Latest Gen-AI Fullstack Stack", included: false },
         { text: "Freelance Client Acquisition", included: false },
         { text: "Advanced Cloud (AWS/Vercel)", included: false },
-        { text: "Premium AI Tools & APIs", included: false }
+        { text: "Premium AI Tools & APIs", included: false },
+         { text: "Google SEO analysis with real data", included: false },
+        { text: "Multiple payment gateway integration", included: false }
       ]
     },
     {
@@ -61,7 +63,9 @@ export const CONFIG = {
         { text: "Lifetime community access", included: false },
         { text: "Freelance Client Acquisition", included: false },
         { text: "Advanced Cloud (AWS/Vercel)", included: false },
-        { text: "Premium AI Tools & APIs", included: false }
+        { text: "Premium AI Tools & APIs", included: false },
+        { text: "Google SEO analysis with real data", included: false },
+        { text: "Multiple payment gateway integration", included: false }
       ]
     },
     {
@@ -88,7 +92,9 @@ export const CONFIG = {
         { text: "Lifetime community access", included: true },
         { text: "Freelance Client Acquisition", included: true },
         { text: "Advanced Cloud (AWS/Vercel)", included: true },
-        { text: "Premium AI Tools & APIs", included: true }
+        { text: "Premium AI Tools & APIs", included: true },
+        { text: "Google SEO analysis with real data", included: true },
+        { text: "Multiple payment gateway integration", included: true }
       ]
     }
   ]

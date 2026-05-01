@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { CONFIG } from '../constants/config';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import aidigitalgenLogo from '../assets/aidigitalgen_logo.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
   const standardPlan = CONFIG.plans[0];
   const isFree = standardPlan.offerPrice === 0;
 
@@ -13,6 +14,8 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const showCTA = location.pathname !== '/services';
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
@@ -42,9 +45,11 @@ export default function Navbar() {
               <strong>{CONFIG.enquiryEmail}</strong>
             </div>
           </a>
-          <a href="/#register" className="navbar-cta">
-            Book Now {isFree ? <span className="cta-free">FREE</span> : `₹${standardPlan.offerPrice}`}
-          </a>
+          {showCTA && (
+            <a href="/#register" className="navbar-cta">
+              Book Now {isFree ? <span className="cta-free">FREE</span> : `₹${standardPlan.offerPrice}`}
+            </a>
+          )}
         </div>
       </div>
     </nav>

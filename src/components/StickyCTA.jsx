@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { CONFIG } from '../constants/config';
 
 export default function StickyCTA() {
   const [visible, setVisible] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,7 +14,7 @@ export default function StickyCTA() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  if (!visible) return null;
+  if (!visible || location.pathname === '/services') return null;
 
   return (
     <div className="sticky-cta" id="sticky-cta">

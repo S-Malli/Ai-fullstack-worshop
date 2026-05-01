@@ -1,7 +1,7 @@
 import CountdownTimer from './CountdownTimer';
 import { CONFIG } from '../constants/config';
-import heroVideo from '../assets/AI_Workshop_Video_Generation.mp4';
-import introVideo from '../assets/Aifullstackworshop_intro.mp4';
+import heroVideo from '../assets/Aidigitalgen.mp4';
+import introVideo from '../assets/Aidigitalgen.mp4';
 
 export default function Hero() {
   const workshopTime = CONFIG.workshop.dateTime;
@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="hero-badge-dot"></span>
-          10+ Years Industry Experience · Live Workshop · Tamil
+          10+ Years Industry Experience · Live Training · Certification
         </div>
 
         <h1 className="hero-title">
@@ -43,6 +43,9 @@ export default function Hero() {
           <a href="#pricing" className="btn-secondary">
             View Plans
           </a>
+        </div>
+        <div className="hero-trust-line">
+          ⭐ 200+ Students | 4.8 Rating | Real Project + Certificate
         </div>
 
         <div className="next-batch-info mb-4">
@@ -74,7 +77,11 @@ export default function Hero() {
             <div className="hero-stat-label">Average Rating</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value gradient-text">Tamil</div>
+            <div className="hero-stat-value gradient-text">Support</div>
+            <div className="hero-stat-label">Internship with Job</div>
+          </div>
+          <div className="hero-stat">
+            <div className="hero-stat-value gradient-text">Tamil & English</div>
             <div className="hero-stat-label">Language</div>
           </div>
         </div>

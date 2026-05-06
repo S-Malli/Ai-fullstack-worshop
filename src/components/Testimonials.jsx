@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import testimonial1 from '../assets/testimonial1.jpeg';
 import testimonial2 from '../assets/testimonial2.jpeg';
 import testimonial3 from '../assets/testimonial3.jpeg';
-import testimonial4 from '../assets/testimonial4.jpeg';
+import testimonial4 from '../assets/testimonial4.png';
 
 const testimonials = [
   {

@@ -2,11 +2,11 @@ import { CONFIG } from '../constants/config';
 
 export default function Highlights() {
   const items = [
-    { emoji: '🎯', text: 'No coding background required', color: '#8338EC' },
-    { emoji: '🛠️', text: '100% practical session', color: '#FF006E' },
-    { emoji: '🚀', text: 'Build project LIVE with guidance', color: '#22c55e' },
-    { emoji: '💡', text: 'Learn by doing, not watching', color: '#3A86FF' },
-    { emoji: '🤝', text: 'Personal support during session', color: '#8338EC' },
+    { emoji: '🎯', text: 'Target: ₹30k - ₹40k Salary', color: '#8338EC' },
+    { emoji: '🛠️', text: '100% practical AI session', color: '#FF006E' },
+    { emoji: '🚀', text: 'Job-ready portfolio building', color: '#22c55e' },
+    { emoji: '💡', text: 'No prior coding needed', color: '#3A86FF' },
+    { emoji: '🤝', text: 'Lifetime community support', color: '#8338EC' },
   ];
 
   return (

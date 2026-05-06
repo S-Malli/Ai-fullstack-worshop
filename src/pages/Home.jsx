@@ -11,6 +11,7 @@ import FinalCTA from '../components/FinalCTA';
 import DemoCertificate from '../components/DemoCertificate';
 import ProjectDemo from '../components/ProjectDemo';
 import ClassPreview from '../components/ClassPreview';
+import ValueProp from '../components/ValueProp';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Marquee />
       <main>
         <Hero />
+        <ValueProp />
         <Highlights />
         <ClassPreview />
         <DemoCertificate />
